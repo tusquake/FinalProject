@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:columnCount="2"
+    android:rowCount="5"
+    android:padding="30dp"
+    android:background="@drawable/app_background_2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonG"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="G"
+        android:textSize="50sp"
+        android:backgroundTint="#87CEEB"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageA"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fruit_a"
+        android:layout_marginTop="20dp"
+        android:tag="A"
+        android:clickable="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonB"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="B"
+        android:textSize="50sp"
+        android:backgroundTint="#98FB98"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageM"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fruit_m"
+        android:layout_marginTop="20dp"
+        android:tag="M"
+        android:clickable="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonA"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="A"
+        android:textSize="50sp"
+        android:backgroundTint="#D8BFD8"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fruit_o"
+        android:layout_marginTop="20dp"
+        android:tag="O"
+        android:clickable="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonM"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="M"
+        android:textSize="50sp"
+        android:backgroundTint="#FFA07A"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageB"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fruit_b"
+        android:layout_marginTop="20dp"
+        android:tag="B"
+        android:clickable="true" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="O"
+        android:textSize="50sp"
+        android:backgroundTint="#FFDEAD"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageG"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fruit_g"
+        android:layout_marginTop="20dp"
+        android:tag="G"
+        android:clickable="true" />
+
+
+
+</GridLayout>
+
