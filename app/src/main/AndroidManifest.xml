@@ -13,13 +13,40 @@
         android:theme="@style/Theme.FinalProject"
         tools:targetApi="31">
         <activity
+            android:name=".Level2.Level2_NumeracyGames_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Level2.Level2_LiteracyGames_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Level2.Level2_EvsGames_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Level1.Level1_EvsGames_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Level1.Level1_LiteracyGames_Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Level1.Level1_NumeracyGames_Menu"
+            android:exported="false" />
+        <activity
             android:name=".Level1.Animation_done"
+            android:exported="false" />
+        <activity
+            android:name=".Level1.Menu_Level1"
+            android:exported="false" />
+        <activity
+            android:name=".Level1.MatchGame"
+            android:exported="false" />
+        <activity
+            android:name=".Level2.Menu_Level2"
             android:exported="false" />
         <activity
             android:name=".Level2.Animal_Quiz"
             android:exported="false" />
         <activity
-            android:name=".Level1.MatchGame"
+            android:name=".Level3.Menu_Level3"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
