@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.example.finalproject.Menu.MenuActivity;
 import com.example.finalproject.login.LoginPage;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Navigate to LoginPage when the button is clicked
-                Intent intent = new Intent(MainActivity.this, LoginPage.class);
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });
