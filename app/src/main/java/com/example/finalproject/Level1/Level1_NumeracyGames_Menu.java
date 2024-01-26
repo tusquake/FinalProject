@@ -22,9 +22,9 @@ public class Level1_NumeracyGames_Menu extends AppCompatActivity {
         game2 = findViewById(R.id.game2);
 
         game1.setOnClickListener(view -> {
-//            Intent intent = new Intent(Level1_NumeracyGames_Menu.this, );
-//            startActivity(intent);
-            Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(Level1_NumeracyGames_Menu.this, DragShape.class);
+            startActivity(intent);
+            //Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
         });
 
         game2.setOnClickListener(view -> {

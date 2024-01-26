@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FinalProject"
         tools:targetApi="31">
         <activity
+            android:name=".Level1.DragShape"
+            android:exported="false" />
+        <activity
             android:name=".Level2.Level2_NumeracyGames_Menu"
             android:exported="false" />
         <activity
