@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.finalproject.Level1.Level1_NumeracyGames_Menu;
 import com.example.finalproject.R;
 
 public class Level2_EvsGames_Menu extends AppCompatActivity {
@@ -28,9 +29,9 @@ public class Level2_EvsGames_Menu extends AppCompatActivity {
         });
 
         game2.setOnClickListener(view -> {
-//            Intent intent = new Intent(Level1_NumeracyGames_Menu.this, );
-//            startActivity(intent);
-            Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(Level2_EvsGames_Menu.this, Musical_Instrument.class );
+            startActivity(intent);
+            //Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
         });
     }
 }

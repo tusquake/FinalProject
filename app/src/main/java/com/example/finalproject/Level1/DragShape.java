@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.finalproject.R;
 
 import android.media.MediaPlayer;
 
+import android.os.Handler;
 import android.view.DragEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -26,6 +28,14 @@ public class DragShape extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drag_shape);
+
+        LottieAnimationView animationView1 = findViewById(R.id.anim_congrats1);
+        LottieAnimationView animationView2 = findViewById(R.id.anim_correct);
+        LottieAnimationView animationView3 = findViewById(R.id.anim_congrats2);
+        animationView1.setAnimation(R.raw.congrats_anim2);
+        animationView2.setAnimation(R.raw.correct_anim);
+        animationView3.setAnimation(R.raw.congrats_anim2);
+
 
 
 
@@ -63,8 +73,11 @@ public class DragShape extends AppCompatActivity {
                         droppedImage.setImageResource(R.drawable.tick_mark);
                         if (correct != null) {
                             correct.start();
+                            animationView1.playAnimation();
+                            animationView2.playAnimation();
+                            animationView3.playAnimation();
                         }
-                        Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
                         count++;
                         if(isEnd(count)){
                             goBack();
@@ -99,8 +112,12 @@ public class DragShape extends AppCompatActivity {
                         droppedImage.setImageResource(R.drawable.tick_mark);
                         if (correct != null) {
                             correct.start();
+                            animationView1.playAnimation();
+                            animationView2.playAnimation();
+                            animationView3.playAnimation();
+
                         }
-                        Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
                         count++;
                         if(isEnd(count)){
                             goBack();
@@ -137,8 +154,12 @@ public class DragShape extends AppCompatActivity {
                         droppedImage.setImageResource(R.drawable.tick_mark);
                         if (correct != null) {
                             correct.start();
+                            animationView1.playAnimation();
+                            animationView2.playAnimation();
+                            animationView3.playAnimation();
+
                         }
-                        Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
                         count++;
                         if(isEnd(count)){
                             goBack();
@@ -174,8 +195,12 @@ public class DragShape extends AppCompatActivity {
                         droppedImage.setImageResource(R.drawable.tick_mark);
                         if (correct != null) {
                             correct.start();
+                            animationView1.playAnimation();
+                            animationView2.playAnimation();
+                            animationView3.playAnimation();
+
                         }
-                        Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
                         count++;
                         if(isEnd(count)){
                             goBack();
@@ -215,11 +240,10 @@ public class DragShape extends AppCompatActivity {
     }
 
 
+
+
     private boolean isEnd(int value){
-        if(value>=4){
-            return true;
-        }
-        return false;
+        return value >= 4;
     }
 
     private void goBack(){

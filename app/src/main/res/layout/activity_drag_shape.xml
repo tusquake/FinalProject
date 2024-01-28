@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- ImageView for the question image -->
     <LinearLayout
@@ -39,6 +40,8 @@
                 android:clickable="true" />
 
         </LinearLayout>
+
+
         <!--  this is row 2   -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,6 +70,46 @@
                 android:contentDescription="question"
                 android:tag="triangle"
                 android:clickable="true" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="8dp"
+            >
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_congrats1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/congrats_anim2" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_correct"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/correct_anim" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_congrats2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/congrats_anim2" />
 
         </LinearLayout>
 
