@@ -29,7 +29,7 @@ public class Musical_Instrument extends AppCompatActivity {
         questionImageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playMusic(R.raw.correct_answer);
+                playMusic(R.raw.music_guitar);
             }
         });
 
@@ -37,30 +37,23 @@ public class Musical_Instrument extends AppCompatActivity {
         questionImageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playMusic(R.raw.correct_answer);
+                playMusic(R.raw.music_piano);
             }
         });
 
         questionImageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playMusic(R.raw.correct_answer);
+                playMusic(R.raw.music_flute);
             }
         });
 
         questionImageView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playMusic(R.raw.correct_answer);
+                playMusic(R.raw.music_xylophone);
             }
         });
-
-
-
-
-
-
-
     }
 
 
