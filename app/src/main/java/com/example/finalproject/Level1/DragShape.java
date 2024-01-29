@@ -28,13 +28,13 @@ public class DragShape extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drag_shape);
-
-        LottieAnimationView animationView1 = findViewById(R.id.anim_congrats1);
-        LottieAnimationView animationView2 = findViewById(R.id.anim_correct);
-        LottieAnimationView animationView3 = findViewById(R.id.anim_congrats2);
-        animationView1.setAnimation(R.raw.congrats_anim2);
-        animationView2.setAnimation(R.raw.correct_anim);
-        animationView3.setAnimation(R.raw.congrats_anim2);
+//
+//        LottieAnimationView animationView1 = findViewById(R.id.anim_congrats1);
+//        LottieAnimationView animationView2 = findViewById(R.id.anim_correct);
+//        LottieAnimationView animationView3 = findViewById(R.id.anim_congrats2);
+//        animationView1.setAnimation(R.raw.congrats_anim2);
+//        animationView2.setAnimation(R.raw.correct_anim);
+//        animationView3.setAnimation(R.raw.congrats_anim2);
 
 
 
@@ -73,9 +73,6 @@ public class DragShape extends AppCompatActivity {
                         droppedImage.setImageResource(R.drawable.tick_mark);
                         if (correct != null) {
                             correct.start();
-                            animationView1.playAnimation();
-                            animationView2.playAnimation();
-                            animationView3.playAnimation();
                         }
                         //Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
                         count++;
@@ -112,10 +109,6 @@ public class DragShape extends AppCompatActivity {
                         droppedImage.setImageResource(R.drawable.tick_mark);
                         if (correct != null) {
                             correct.start();
-                            animationView1.playAnimation();
-                            animationView2.playAnimation();
-                            animationView3.playAnimation();
-
                         }
                         //Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
                         count++;
@@ -154,10 +147,6 @@ public class DragShape extends AppCompatActivity {
                         droppedImage.setImageResource(R.drawable.tick_mark);
                         if (correct != null) {
                             correct.start();
-                            animationView1.playAnimation();
-                            animationView2.playAnimation();
-                            animationView3.playAnimation();
-
                         }
                         //Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
                         count++;
@@ -195,10 +184,6 @@ public class DragShape extends AppCompatActivity {
                         droppedImage.setImageResource(R.drawable.tick_mark);
                         if (correct != null) {
                             correct.start();
-                            animationView1.playAnimation();
-                            animationView2.playAnimation();
-                            animationView3.playAnimation();
-
                         }
                         //Toast.makeText(DragShape.this, "This is Correct!", Toast.LENGTH_SHORT).show();
                         count++;
