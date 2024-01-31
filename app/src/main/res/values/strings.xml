@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">Final Project</string>
+    <string name="app_name">QUESTOPIA</string>
     <string name="_3yrs_to_4yrs">3yrs to 4yrs</string>
     <string name="_4yrs_to_5yrs">4yrs to 5yrs</string>
     <string name="_5yrs_to_6yrs">5yrs to 6yrs</string>
+    <string name="exit_app">Exit App</string>
+    <string name="evs_games">EVS GAMES</string>
+    <string name="numeracy_games">NUMERACY GAMES</string>
+    <string name="literacy_games">LITERACY GAMES</string>
+    <string name="match_shapes">MATCH SHAPES</string>
 </resources>

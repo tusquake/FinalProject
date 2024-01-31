@@ -43,7 +43,14 @@ public class MatchGame extends AppCompatActivity {
         imageO = findViewById(R.id.imageO);
         imageG = findViewById(R.id.imageG);
 
-        MediaPlayer correct,wrong;
+        MediaPlayer correct,wrong,match_heading;
+
+        match_heading = MediaPlayer.create(this,R.raw.match_heading);
+
+        if (match_heading != null) {
+            match_heading.start();
+        }
+
 
         correct = MediaPlayer.create(this, R.raw.correct_answer);
         wrong = MediaPlayer.create(this, R.raw.wrong_answer);

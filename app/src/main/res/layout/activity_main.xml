@@ -32,12 +32,12 @@
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/anim1"
             android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            android:visibility="visible"
-            android:layout_gravity="center_horizontal"
-            app:lottie_rawRes="@raw/home_anim"/>
+            app:lottie_rawRes="@raw/home_anim" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonMainLogin"
@@ -46,7 +46,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="Take to Login Page"
+            android:text="Take to Menu Page"
             android:layout_gravity="center"
             android:gravity="center_horizontal"
             android:layout_marginTop="180dp"
